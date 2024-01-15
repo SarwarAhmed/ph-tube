@@ -7,8 +7,66 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* nav section */
+.nav_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.logo_section {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    margin-right: 20px;
+}
+
+.brand_name {
+    color: #FF5400;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.roam {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+ul > li a {
+    text-decoration: none;
+    margin-left: 45px;
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
