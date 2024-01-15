@@ -76,6 +76,83 @@ ul>li a {
     display: none;
 }
 
+/* top section  */
+.header_bg_section {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../images/Group13.png");
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.header_description {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+    width: 676px;
+}
+
+.top_form {
+    display: flex;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.30);
+    padding: 24px 10px;
+    gap: 10px;
+}
+
+.input_section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.input_field {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.input_btn_svg {
+    inset-inline-start: 0px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.input_svg {
+    position: absolute;
+    color: #FFF;
+    margin-right: 10px;
+}
+
 /* ------------------------------Resposive -------------------------------------- */
 @media screen and (max-width: 600px) {
     .top_nav {
@@ -85,12 +162,13 @@ ul>li a {
     .hamburger {
         display: block;
         cursor: pointer;
-       margin-right: 20px;
+        margin-right: 20px;
     }
 
     .brand_name {
         font-size: 20px;
     }
+
     .logo_section {
         margin-left: 20px;
     }
