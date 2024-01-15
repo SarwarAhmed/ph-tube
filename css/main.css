@@ -22,7 +22,7 @@ h3 {
 }
 
 section {
-    max-width: 1200px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -54,12 +54,13 @@ section {
     font-size: 36px;
     font-weight: 800;
 }
+
 nav>ul {
     display: flex;
     list-style: none;
 }
 
-ul > li a {
+ul>li a {
     text-decoration: none;
     margin-left: 45px;
     color: var(--Dark-02, #424247);
@@ -69,4 +70,32 @@ ul > li a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* ------------------------------Resposive -------------------------------------- */
+@media screen and (max-width: 600px) {
+    .top_nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+       margin-right: 20px;
+    }
+
+    .brand_name {
+        font-size: 20px;
+    }
+    .logo_section {
+        margin-left: 20px;
+    }
+
+    .roam {
+        font-size: 20px;
+    }
 }
