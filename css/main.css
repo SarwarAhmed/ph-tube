@@ -141,6 +141,7 @@ ul>li a {
     line-height: normal;
 }
 
+
 .input_btn_svg {
     inset-inline-start: 0px;
     margin-left: 20px;
@@ -176,4 +177,32 @@ ul>li a {
     .roam {
         font-size: 20px;
     }
+
+    .header_bg_section {
+        width: 335px;
+    }
+
+    .header_title {
+        padding-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .header_description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        width: 304px;
+    }
+
+    .top_form {
+        flex-direction: column;
+    }
+
+    .btn-primary-sm {
+        border-radius: 8px;
+        background: #FF5400;
+    }
+   .btn-primary {
+    border-radius: none;
+   }
 }
