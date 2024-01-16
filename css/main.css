@@ -544,6 +544,46 @@ ul>li a {
     font-weight: 800;
 }
 
+footer {
+    margin-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer_container {
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.footer-hr {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    width: 100%;
+}
+
+.social_icon>a>img {
+    height: 24px;
+    width: 24px;
+    margin: 10px 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
 /* ------------------------------Resposive -------------------------------------- */
 @media screen and (max-width: 600px) {
     .top_nav {
@@ -727,5 +767,18 @@ ul>li a {
 
     .roated-card-text {
         font-size: 20px;
+    }
+
+
+    .footer_container {
+        width: 370px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 50px 0;
+        margin: 0 auto;
+        text-align: center;
     }
 }
