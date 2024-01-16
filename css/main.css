@@ -652,7 +652,7 @@ footer {
     }
 
     .popular_content {
-        width: 335px
+        width: 400px
     }
 
     .popular-section {
@@ -780,5 +780,13 @@ footer {
         padding: 50px 0;
         margin: 0 auto;
         text-align: center;
+    }
+    .deal-card {
+        margin: 10px 10px;
+    }
+
+    .deal-card-left
+    {
+        margin: 10px 10px;
     }
 }
