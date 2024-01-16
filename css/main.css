@@ -584,6 +584,75 @@ footer {
     line-height: normal;
 }
 
+.offer-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.offer_card1 {
+    background-image: url("../Images/boy1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.offer_card1>h2 {
+    color: #F2F;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.offer_card1>p {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 20px;
+    /* 162.5% */
+}
+
+.offer_card2>p {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 20px;
+    /* 162.5% */
+}
+
+.offer_card2>h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.offer_card2>button {
+    margin: 20px;
+}
+
+.offer_card1>button {
+    margin: 20px;
+}
+
+
+.offer_card2 {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/boy2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    border-radius: 16px;
+}
+
 /* ------------------------------Resposive -------------------------------------- */
 @media screen and (max-width: 600px) {
     .top_nav {
@@ -628,9 +697,20 @@ footer {
     .newsletter-container,
     .popular-section,
     .choose_container,
+    .offer-section,
     .flex {
         flex-direction: column;
     }
+   .offer-section {
+   }
+  .offer_card1 {
+    width: 95%;
+    margin: 20px 20px;
+  }
+  .offer_card2 {
+    width: 95%;
+    margin: 20px 20px;
+  }
 
     .choose_container {
         margin: 0 10px;
@@ -781,12 +861,12 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
+
     .deal-card {
         margin: 10px 10px;
     }
 
-    .deal-card-left
-    {
+    .deal-card-left {
         margin: 10px 10px;
     }
 }
