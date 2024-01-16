@@ -26,6 +26,10 @@ section {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+}
+
 /* nav section */
 .nav_section {
     display: flex;
@@ -78,7 +82,7 @@ ul>li a {
 
 /* top section  */
 .header_bg_section {
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../images/Group13.png");
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group13.png");
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,6 +215,7 @@ ul>li a {
 .destination_section {
     margin-top: 100px;
 }
+
 .item1 img {
     height: 100%;
     width: 40%;
@@ -239,7 +244,6 @@ ul>li a {
     margin-bottom: 20px;
 }
 
-/* test --------------------------------------------------------------------------- */
 .img-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -295,6 +299,66 @@ ul>li a {
     grid: 3/span 3;
 }
 
+/* choose section */
+.choose_section {
+    margin-top: 100px;
+}
+.choose_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.choose_container_child {
+   margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card {
+    width: 550px;
+    height: 284px;
+    border-radius: 16px;
+}
+
+.card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+
+.card-icon {
+    padding: 32px;
+}
+
+.card-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    padding-left: 32px;
+    font-weight: 800;
+}
+
+.card-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 32px;
+}
 
 /* ------------------------------Resposive -------------------------------------- */
 @media screen and (max-width: 600px) {
@@ -337,9 +401,12 @@ ul>li a {
     }
 
     .top_form,
-    .popular-section {
+    .popular-section, .choose_container, .flex {
         flex-direction: column;
     }
+   .choose_container {
+    margin: 0 10px;
+   }
 
     .btn-primary-sm {
         border-radius: 8px;
