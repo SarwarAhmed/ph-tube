@@ -443,6 +443,107 @@ ul>li a {
     height: 424px;
 }
 
+.newsletter-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-form {
+    margin-right: 20px;
+    padding: 20px;
+    width: 40%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    /* margin-bottom: 20px; */
+}
+
+.newsletter-text {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.hr {
+    /* margin-top: 20px; */
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsletter-form>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.newsletter_input_field {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 10px 20px;
+    border: none;
+}
+
+.newsletter-btn {
+    border-radius: 8px;
+    border: none;
+    background: #FF5400;
+    padding: 10px 20px;
+    color: #FFF;
+}
+
+.newsletter-form>form>button {
+    display: block;
+    width: full;
+}
+
+.newsletter-bg {
+    background-image: url("../Images/Rectangle8.png");
+    width: 600px;
+    height: 400px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.roated-card {
+    width: 300px;
+    height: 100px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 42px;
+    right: 4px;
+    color: #FFF;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+}
+
+.roated-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.roated-card-text {
+    font-family: Mulish;
+    font-size: 30px;
+    font-weight: 800;
+}
+
 /* ------------------------------Resposive -------------------------------------- */
 @media screen and (max-width: 600px) {
     .top_nav {
@@ -484,6 +585,7 @@ ul>li a {
     }
 
     .top_form,
+    .newsletter-container,
     .popular-section,
     .choose_container,
     .flex {
@@ -600,5 +702,30 @@ ul>li a {
         border-radius: 16px;
         width: 335px;
         height: 200px;
+    }
+
+    .newsletter-form {
+        width: 450px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .newsletter_input_field {
+        margin-bottom: 20px;
+    }
+
+    .newsletter-bg {
+        border-radius: 16px;
+        width: 450px;
+        margin: 20px auto;
+    }
+
+    .roated-card-title {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .roated-card-text {
+        font-size: 20px;
     }
 }
