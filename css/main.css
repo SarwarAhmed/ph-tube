@@ -415,6 +415,34 @@ ul>li a {
     left: 10%;
 }
 
+/* perfect place section */
+.place-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-title {
+    width: 450px
+}
+
+.place-content {
+    width: 450px;
+}
+
+.place-content>ul>li {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.place-video {
+    background-image: url("../Images/Group40089.png");
+    border-radius: 16px;
+    width: 610px;
+    height: 424px;
+}
+
 /* ------------------------------Resposive -------------------------------------- */
 @media screen and (max-width: 600px) {
     .top_nav {
@@ -545,5 +573,32 @@ ul>li a {
     .deal-inner-card-left {
         width: 280px;
         height: 70%;
+    }
+
+    .place-video {
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    .place-title {
+        width: 300px;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 60px;
+    }
+
+    .place-content {}
+
+    .place-content>ul>li {
+        color: #131318;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .place-video {
+        border-radius: 16px;
+        width: 335px;
+        height: 200px;
     }
 }
