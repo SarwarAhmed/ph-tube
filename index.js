@@ -1,5 +1,7 @@
 const btnContainer = document.getElementById('btn-container');
 const cardContainer = document.getElementById('card-container');
+const errorElement = document.getElementById('error-element');
+
 
 let selectedCategory = 1000;
 
@@ -26,6 +28,12 @@ const fetchDataByCategory = (categoryID) => {
     fetch(url)
         .then(res => res.json())
         .then(({ data }) => {
+            if (data.length === 0) {
+                errorElement.classList.remove('hidden');
+            } else {
+                errorElement.classList.add('hidden');
+            }
+
             cardContainer.innerHTML = '';
 
             data.forEach((video) => {
